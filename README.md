@@ -82,3 +82,9 @@ However, if the error message displays too much information, the sensitive data 
 It is important to observe comprehensive API activity logging and monitoring as part of API security. Logs are helpful in establishing app usage patterns to make it easier to spot malicious activities. 
 Preferably, logging and monitoring should be continuous and conducted in real-time to be able to respond promptly to potential threats and implement mitigation measures readily.
 It is not possible to keep all detailed logs, though, so it is important to adopt a suitable data retention and removal policy. When it comes to log analysis, it helps to aggregate data and centralise analysis and correlation. It would also be prudent to have a system that sends out alerts for critical incidents.
+
+<!-- What is CI/CD? -->
+CI/CD stands for Continuous Integration and Continuous Delivery/Deployment. With CI/CD, we automate the integration of code changes from multiple developers into a single codebase. It is a software development practice where the developers commit their work frequently to the central code repository (GitHub or Stash).
+Automated pipelines run tests, builds, and checks as soon as code is pushed, so errors are caught early. Continuous Delivery makes sure that tested code is automatically packaged and ready for deployment
+While Continuous Deployment takes it a step further by directly releasing to production without manual steps. This means smaller, frequent updates instead of one big risky release.
+Tools like Git, Jenkins, Docker, and Kubernetes automate everything from building to deployment, making the workflow transparent and collaborative. Bugs are fixed quickly, rollbacks are easier, and overall software delivery happens in hours instead of days
