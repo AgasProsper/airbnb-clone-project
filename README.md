@@ -56,3 +56,29 @@ Booking System: Create a booking mechanism for users to reserve properties and m
 Payment Processing: Integrate a payment system to handle transactions and record payment details.
 Review System: Allow users to leave reviews and ratings for properties.
 Data Optimization: Ensure efficient data retrieval and storage through database optimizations.
+
+##Input Validation##
+Input validation refers to the sanitising of data received by an API. This validation is important, because hackers can use certain combinations of characters or words in inputs to bring out unexpected responses. For example, in SQL injection, the attacker introduces a malicious script or code that is accepted by the API and executed in the backend database. The malicious code can result in access to sensitive data, the modification or deletion of data, or the execution of arbitrary commands.
+
+##API Security##
+##Rate Limiting and Throttling##
+As the phrase suggests, rate limiting is about imposing restrictions on the number of requests that can be made over a specific period. This is comparable to the limits on the number of times a login attempt is allowed. It is a way of ensuring that the login attempts or requests made are legitimate, given that it should not take too many times to successfully sign in to an account or complete a task in line with the requests made to access specific resources. 
+Additionally, rate throttling can be implemented to reduce the speed of the responses to requests. Rate limiting and throttling create a major obstacle to bots that automate attacks on APIs. They prevent brute force attacks which can only succeed if there are no hindrances in doing an action repeatedly and in rapid succession.
+
+##API Endpoint Security##
+API endpoint security entails the protection of specific paths where API requests are processed. This is a crucial aspect of API security, because it concerns the protection of the point of contact between applications and services – which can otherwise be targeted by injection attacks, data bombardment, and the exploitation of misconfigurations and insecure deserialisation.
+As apps communicate with each other through APIs, sensitive data are usually exchanged at API endpoints. This sensitive data might even include login credentials, tokens, permission, or metadata about the rest of the data in the apps. This makes API endpoints a natural target for threat actors. The failure to protect these data can have serious consequences on the integrity of apps and web services. Also, malicious actions happening at the API endpoints can result in the disruption of API services.
+
+##Encryption##
+Encryption is often regarded as a cornerstone of API security. Data should be encrypted not only at rest but also in transit. Databases, data in file systems, secrets and keys, and various other data should be encrypted. Also, data being transmitted should be protected through HTTPS, Transport Layer Security (TLS), and Secure Sockets Layer (SSL).
+Organisations must make sure that they are using the appropriate encryption algorithm for their specific requirements. In API security, encryption can be symmetric or asymmetric. The most common algorithms applied are Advanced Encryption Standard (AES), ChatCha20, Rivest-Shamir-Adleman (RSA), and Elliptic Curve Cryptography (ECC). 
+It is also advisable to use longer key lengths for maximum security. Additionally, there has to be an organised management system of digital certificates for HTTPS.
+
+##Error Management##
+The handling of errors may sound trivial, but it is a crucial aspect of API security, because improper error handling can accidentally reveal sensitive data to the public. Whenever software errors are encountered, it is compulsory for details about the error to be displayed to help in problem diagnosis and resolution.
+However, if the error message displays too much information, the sensitive data that is unnecessarily divulged can be used by threat actors to attack the application. For example, the error message may show details about system configurations, internal error codes, and database schemas. This information can help attackers tweak or rethink their attack strategies to overcome defences.
+
+##Logging and Monitoring##
+It is important to observe comprehensive API activity logging and monitoring as part of API security. Logs are helpful in establishing app usage patterns to make it easier to spot malicious activities. 
+Preferably, logging and monitoring should be continuous and conducted in real-time to be able to respond promptly to potential threats and implement mitigation measures readily.
+It is not possible to keep all detailed logs, though, so it is important to adopt a suitable data retention and removal policy. When it comes to log analysis, it helps to aggregate data and centralise analysis and correlation. It would also be prudent to have a system that sends out alerts for critical incidents.
