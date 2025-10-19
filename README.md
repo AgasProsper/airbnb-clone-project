@@ -43,7 +43,6 @@ Payments
 
 POST /payments/ - Process a payment
 Reviews
-
 GET /reviews/ - List all reviews
 POST /reviews/ - Create a new review
 GET /reviews/{review_id}/ - Retrieve a specific review
